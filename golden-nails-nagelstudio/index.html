@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Golden Nails Nagelstudio · Nagelstudio in Meppen</title>
+<style>
+@font-face{font-family:Fraunces;src:url(../_fonts/fraunces-latin-400-normal.woff2) format('woff2');font-weight:400;font-display:swap}
+@font-face{font-family:Fraunces;src:url(../_fonts/fraunces-latin-600-normal.woff2) format('woff2');font-weight:600;font-display:swap}
+@font-face{font-family:Fraunces;src:url(../_fonts/fraunces-latin-400-italic.woff2) format('woff2');font-weight:400;font-style:italic;font-display:swap}
+@font-face{font-family:Fraunces;src:url(../_fonts/fraunces-latin-600-italic.woff2) format('woff2');font-weight:600;font-style:italic;font-display:swap}
+@font-face{font-family:'Instrument Sans';src:url(../_fonts/instrument-sans-latin-400-normal.woff2) format('woff2');font-weight:400;font-display:swap}
+@font-face{font-family:'Instrument Sans';src:url(../_fonts/instrument-sans-latin-500-normal.woff2) format('woff2');font-weight:500;font-display:swap}
+@font-face{font-family:'Instrument Sans';src:url(../_fonts/instrument-sans-latin-600-normal.woff2) format('woff2');font-weight:600;font-display:swap}
+@font-face{font-family:Archivo;src:url(../_fonts/archivo-latin-400-normal.woff2) format('woff2');font-weight:400;font-display:swap}
+@font-face{font-family:Archivo;src:url(../_fonts/archivo-latin-500-normal.woff2) format('woff2');font-weight:500;font-display:swap}
+@font-face{font-family:Archivo;src:url(../_fonts/archivo-latin-800-normal.woff2) format('woff2');font-weight:800;font-display:swap}
+@font-face{font-family:Oswald;src:url(../_fonts/oswald-latin-500-normal.woff2) format('woff2');font-weight:500;font-display:swap}
+@font-face{font-family:Oswald;src:url(../_fonts/oswald-latin-600-normal.woff2) format('woff2');font-weight:600;font-display:swap}
+
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 var(--body);-webkit-font-smoothing:antialiased}
+a{color:inherit}
+.wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+.draft{font-size:12.5px;color:var(--muted);border-bottom:1px solid var(--line);padding:8px 0;text-align:center}
+.top{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:18px 20px}
+.mark{font-family:var(--head);font-weight:var(--hw);font-size:20px;letter-spacing:var(--ls);text-transform:var(--tt);text-decoration:none;line-height:1.15}
+.top nav{display:flex;gap:22px;font-size:14.5px}
+.top nav a{text-decoration:none;color:var(--muted)}
+.top nav a:hover{color:var(--ink)}
+.top .tel{font-weight:600;text-decoration:none;white-space:nowrap}
+.hero{padding:28px 0 36px}
+.kicker{font-size:14.5px;color:var(--muted);margin:0 0 14px}
+h1{font-family:var(--head);font-weight:var(--hw);font-style:var(--ns);font-size:clamp(40px,9vw,76px);line-height:1.02;letter-spacing:var(--h1ls);text-transform:var(--tt);margin:0 0 18px;max-width:14ch}
+.lead{font-size:18px;max-width:34ch;margin:0 0 22px}
+.status{display:inline-flex;align-items:center;gap:9px;font-size:15px;margin:0 0 26px}
+.status i{width:8px;height:8px;border-radius:50%;background:var(--muted);display:inline-block}
+.status.open i{background:#2e8b57}
+.actions{display:flex;flex-wrap:wrap;gap:12px 22px;align-items:center}
+.btn{display:inline-block;background:var(--accent);color:var(--on-accent);text-decoration:none;font-weight:600;padding:13px 22px;border-radius:3px}
+.link{font-weight:600;text-decoration:none;border-bottom:1.5px solid var(--accent);padding-bottom:1px}
+.stars{margin-top:26px;font-size:14.5px;color:var(--muted)}
+.stars b{color:var(--ink);font-weight:600}
+.photo{margin:0 0 8px;aspect-ratio:4/3;border:1px dashed var(--line);border-radius:2px;display:flex;align-items:flex-end;padding:14px;color:var(--muted);font-size:13.5px;
+ background:var(--paper) repeating-linear-gradient(135deg,transparent 0 11px,var(--hatch) 11px 12px)}
+figure.pic{margin:0 0 8px}
+figure.pic img{display:block;width:100%;height:auto;aspect-ratio:3/2;object-fit:cover;border-radius:2px}
+figure.pic figcaption{font-size:12.5px;color:var(--muted);margin-top:8px}
+section{padding:44px 0;border-top:1px solid var(--line)}
+h2{font-family:var(--head);font-weight:var(--hw);text-transform:var(--tt);letter-spacing:var(--ls);font-size:clamp(26px,5vw,34px);line-height:1.15;margin:0 0 22px}
+.grid{display:grid;gap:40px}
+table{border-collapse:collapse;width:100%;font-variant-numeric:tabular-nums}
+td{padding:9px 0;border-bottom:1px solid var(--line);vertical-align:top}
+td+td{text-align:right;padding-left:16px}
+tr.today td{font-weight:600}
+tr.today td:first-child::after{content:' · heute';font-weight:400;color:var(--muted)}
+.closed{color:var(--muted)}
+.small{font-size:14px;color:var(--muted);margin:12px 0 0}
+address{font-style:normal;font-size:18px;line-height:1.5;margin:0 0 14px}
+.contact p{margin:0 0 6px}
+.menu h3{font-family:var(--body);font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);font-weight:600;margin:26px 0 6px}
+.menu h3:first-child{margin-top:0}
+.row{display:flex;align-items:baseline;gap:10px;padding:7px 0}
+.row span:first-child{flex:none;max-width:70%}
+.row .dots{flex:1;border-bottom:1px dotted var(--muted);opacity:.6;transform:translateY(-4px)}
+.row .p{flex:none;font-variant-numeric:tabular-nums}
+.row.todo .p{color:var(--muted);font-size:14px}
+.svc{counter-reset:s;display:grid;gap:0}
+.svc div{counter-increment:s;padding:18px 0;border-bottom:1px solid var(--line);display:grid;grid-template-columns:48px 1fr;gap:4px 12px}
+.svc div::before{content:counter(s,decimal-leading-zero);font-family:var(--head);font-weight:var(--hw);color:var(--accent);grid-row:span 2}
+.svc b{font-size:18px}
+.svc span{color:var(--muted)}
+footer{border-top:1px solid var(--line);padding:30px 0 110px;font-size:14px;color:var(--muted)}
+footer .f{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px 30px}
+footer a{color:var(--muted)}
+.bar{position:fixed;left:0;right:0;bottom:0;padding:10px 16px calc(10px + env(safe-area-inset-bottom));background:var(--bg);border-top:1px solid var(--line);display:flex;gap:10px}
+.bar a{flex:1;text-align:center}
+.bar .btn{padding:12px}
+.bar .ghost{display:inline-block;padding:12px;border:1px solid var(--line);border-radius:3px;text-decoration:none;font-weight:600}
+@media(min-width:820px){
+ .hero .wrap{display:grid;grid-template-columns:1.15fr .85fr;gap:56px;align-items:end}
+ .grid.two{grid-template-columns:1fr 1fr;gap:64px}
+ .bar{display:none}
+ footer{padding-bottom:40px}
+ .top{padding:24px 20px}
+}
+@media(max-width:819px){.top nav{display:none}.hero .wrap>div:first-child{margin-bottom:30px}}
+:root{--bg:#f8f3f2;--paper:#fdfafa;--ink:#221a1c;--muted:#72656a;--line:#e8dcdc;--accent:#7a4a6e;--on-accent:#ffffff;--head:'Fraunces', Georgia, serif;--body:'Instrument Sans', system-ui, sans-serif;--hw:400;--ns:italic;--tt:none;--ls:0;--h1ls:-.02em;--hatch:rgba(0,0,0,.05)}</style>
+</head>
+<body>
+<div class="draft"><div class="wrap">Entwurf von Jan · Webdesign Fürstenau. Noch nicht die offizielle Seite von Golden Nails Nagelstudio.</div></div>
+<div class="wrap top">
+  <a class="mark" href="#">Golden Nails Nagelstudio</a>
+  <nav><a href="#zeiten">Öffnungszeiten</a><a href="#leistungen">Leistungen</a><a href="#anfahrt">Anfahrt</a></nav>
+  <a class="tel" href="tel:+495931886976">05931 886976</a>
+</div>
+<header class="hero">
+  <div class="wrap">
+    <div>
+      <p class="kicker">Schullendamm 62, Meppen</p>
+      <h1>Golden Nails Nagelstudio</h1>
+      <p class="lead">Nagelstudio in Meppen.</p>
+      <p class="status" id="status"><i></i>Öffnungszeiten siehe unten</p>
+      <div class="actions"><a class="btn" href="tel:+495931886976">Anrufen</a><a class="link" href="https://www.google.com/maps/search/?api=1&query=Golden%20Nails%20Nagelstudio%2C%20Schullendamm%2062%2C%2049716%20Meppen" rel="noopener">Route planen</a></div>
+      <p class="stars"><b>4,8 von 5</b> Sternen bei Google</p>
+    </div>
+    <figure class="pic"><img src="../_img/nagel-wand.jpg" alt="Wand voller Nagellack in vielen Farben" width="1200" height="800" loading="eager"><figcaption>Beispielbild. Hier kommt später ein Foto von Ihnen hin.</figcaption></figure>
+  </div>
+</header>
+<section id="zeiten">
+  <div class="wrap grid two">
+    <div><h2>Öffnungszeiten</h2><table><tr data-d="0"><td>Montag</td><td>8–18 Uhr</td></tr><tr data-d="1"><td>Dienstag</td><td>8–18 Uhr</td></tr><tr data-d="2"><td>Mittwoch</td><td>8–18 Uhr</td></tr><tr data-d="3"><td>Donnerstag</td><td>8–18 Uhr</td></tr><tr data-d="4"><td>Freitag</td><td>8–18 Uhr</td></tr><tr data-d="5"><td>Samstag</td><td class=closed>Geschlossen</td></tr><tr data-d="6"><td>Sonntag</td><td class=closed>Geschlossen</td></tr></table></div>
+    <div id="anfahrt" class="contact"><h2>So finden Sie uns</h2>
+      <address>Golden Nails Nagelstudio<br>Schullendamm 62<br>49716 Meppen</address>
+      <p>Telefon: <a href="tel:+495931886976">05931 886976</a></p>
+      <p style="margin-top:14px"><a class="link" href="https://www.google.com/maps/search/?api=1&query=Golden%20Nails%20Nagelstudio%2C%20Schullendamm%2062%2C%2049716%20Meppen" rel="noopener">In Google Maps öffnen</a></p>
+    </div>
+  </div>
+</section>
+<section id="leistungen"><div class="wrap grid two"><div><h2>Leistungen &amp; Preise</h2><p class="small" style="margin:0">Hier kommt Ihre echte Liste hin. Die Punkte sind nur ein Platzhalter.</p></div><div class="menu"><div class="row todo"><span>Neumodellage</span><span class="dots"></span><span class="p">Preis folgt</span></div><div class="row todo"><span>Auffüllen</span><span class="dots"></span><span class="p">Preis folgt</span></div><div class="row todo"><span>Maniküre</span><span class="dots"></span><span class="p">Preis folgt</span></div><div class="row todo"><span>Nageldesign</span><span class="dots"></span><span class="p">Preis folgt</span></div></div></div></section>
+<footer>
+  <div class="wrap f">
+    <span>© Golden Nails Nagelstudio · Schullendamm 62 · 49716 Meppen</span>
+    <span><a href="#">Impressum</a> · <a href="#">Datenschutz</a></span>
+  </div>
+</footer>
+<div class="bar"><a class="btn" href="tel:+495931886976">Anrufen</a><a class="ghost" href="https://www.google.com/maps/search/?api=1&query=Golden%20Nails%20Nagelstudio%2C%20Schullendamm%2062%2C%2049716%20Meppen" rel="noopener">Route</a></div>
+<script type="application/json" id="h">["8–18 Uhr", "8–18 Uhr", "8–18 Uhr", "8–18 Uhr", "8–18 Uhr", "geschlossen", "geschlossen"]</script>
+<script>
+(function(){
+ var H=JSON.parse(document.getElementById('h').textContent); // Mo..So
+ function parse(s){var r=[];if(!/\d/.test(s))return r;s.replace(' Uhr','').split('&').forEach(function(p){var m=p.trim().split('–');if(m.length==2){var a=t(m[0]),b=t(m[1]);if(b<=a)b+=1440;r.push([a,b]);}});return r;}
+ function t(x){var a=x.trim().split(':');return +a[0]*60+(+a[1]||0);}
+ function f(m){if(m>1440)m-=1440;var h=Math.floor(m/60),n=m%60;return h+(n?':'+(n<10?'0':'')+n:'')+' Uhr';}
+ var D=['Montag','Dienstag','Mittwoch','Donnerstag','Freitag','Samstag','Sonntag'];
+ var now=new Date(),d=(now.getDay()+6)%7,m=now.getHours()*60+now.getMinutes();
+ var row=document.querySelector('tr[data-d="'+d+'"]');if(row)row.className='today';
+ var el=document.getElementById('status'),txt='';
+ var today=parse(H[d]);
+ for(var i=0;i<today.length;i++){if(m>=today[i][0]&&m<today[i][1]){txt='Jetzt geöffnet, bis '+f(today[i][1]);el.className='status open';break;}
+   if(m<today[i][0]){txt='Heute ab '+f(today[i][0])+' geöffnet';break;}}
+ if(!txt){for(var k=1;k<=7;k++){var dd=(d+k)%7,r=parse(H[dd]);if(r.length){txt='Gerade geschlossen. '+(k==1?'Morgen':D[dd])+' ab '+f(r[0][0])+' wieder da.';break;}}}
+ el.innerHTML='<i></i>'+txt;
+})();
+</script>
+</body>
+</html>
